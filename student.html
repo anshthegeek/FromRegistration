@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="student.css">
+</head>
+<body>
+    
+    <div class="main">
+        <div class="enrol">
+<h6>Student Enrollment Form</h6>
+        </div>
+
+        <div class="all">
+        <div class="inputs">
+            <div id="mail">
+              <label class="mailC" for="">Name</label>
+                <input type="text" id="name" class="inp"  required placeholder="Enter your Name" />
+              </div>
+
+              <div id="mail">
+                  <label class="mailC" for="">Email ID</label>
+                    <input type="text" id="email" class="inp"   required placeholder="Enter your Email"/>
+                  </div>
+
+                  <div id="mail">
+                      <label class="mailC" for="">Website</label>
+                        <input type="text" id="website" class="inp"  required placeholder="Website" />
+                      </div>
+
+                      <div id="mail">
+                          <label class="mailC" for="">Image Link</label>
+                            <input type="text" id="imagelink" class="inp" required placeholder="Link" />
+                          </div>
+                      </div>
+
+<div class="maingender">
+    <h6 class="gender">Gender: </h6>
+<div class="flexgender">
+    
+
+    <div class="form-check form-check-inline mb-0 me-4">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender"
+        value="option2" />
+      <label class="form-check-label" for="maleGender" id="females">Female</label>
+    </div>
+
+    <div class="form-check form-check-inline mb-0 me-4">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender"
+          value="option2" />
+        <label class="form-check-label" for="maleGender" id="males">Male</label>
+      </div>
+
+    <div class="form-check form-check-inline mb-0">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="otherGender"
+        value="option3" />
+      <label class="form-check-label" for="otherGender">Other</label>
+    </div>
+
+</div>
+</div>
+
+
+<div class="skill">
+    <div class="java">
+
+            
+        <label class="" for="" id="javaID">Skills</label>
+        <div class="allskils">
+      <div class="box1"><input class="java" type="checkbox" value="" id="checkbox" /> <label for="" id="java">Java</label></div>
+      <div class="box2"><input class="java" type="checkbox" value="" id="checkbox" /> <label for="" id="java">HMTL</label></div> 
+       <div class="box3"><input class="java" type="checkbox" value="" id="checkbox" /> <label for="" id="java">CSS</label></div>  
+        
+      
+</div>
+                        
+    </div>
+
+</div>
+
+
+
+<div class="btton">
+<div class="btn">
+    <button class="registerBTN" onclick="AddRow()">Enroll Student</button>
+  </div>
+
+
+  <div class="btn2">
+    <button type="button"class="registerBTN" id="clear" onclick="Row()">Clear</button>
+  </div>
+
+</div>
+</div>
+</div>
+    
+
+
+    <section class="main2">
+    <div id="line">
+
+    </div>
+    </section>  
+    
+    <section class="main3">
+        <h2>Enrolled Students</h2>
+
+
+        <table id="show">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Email ID</th>
+					<th>Website </th>
+					<th>Image Link</th>
+                    <th>Gender</th>
+				</tr>
+			</thead>
+		</table>
+    </section>
+
+
+    <script src="student.js"></script>
+</body>
+</html>
